@@ -1,7 +1,7 @@
 FROM alpine:latest
 
-ENV PACKER_VERSION=1.0.2
-ENV PACKER_SHA256SUM=13774108d10e26b1b26cc5a0a28e26c934b4e2c66bc3e6c33ea04c2f248aad7f
+ENV PACKER_VERSION=1.0.3
+ENV PACKER_SHA256SUM=0e10169ef9cf3fd55dcc9dc213b9995170f7712e8a162ca2f5109d62bfbe7529
 
 RUN apk add --update git curl openssh bash openssl wget \
     && curl https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip > packer_${PACKER_VERSION}_linux_amd64.zip \
