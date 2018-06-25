@@ -9,4 +9,4 @@ RUN apk add --no-cache --update \
 
 ENTRYPOINT [ "/bin/bash" ]
 
-CMD [  ]
+CMD exec /bin/bash -c "trap : TERM INT; sleep infinity & wait"
